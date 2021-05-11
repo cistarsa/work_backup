@@ -24,3 +24,11 @@ molecularecology@Chimborazo:/media/Summit/CHTC/staging/Modern_Museum/fastqs/RAiS
 (output for selective sweep windows, this crashed texteditor all_WI_25_run_51_output.txt)
 
 $$ for j in `ls  RAiSD_Report.WI*25*run_51* | sed 's/RAiSD_Report.WI_25_run_51.//g'`; do for z in `ls RAiSD_Report.WI*25*run_51*`; do if [[ "$z" == *"$j" ]]; then sed "s/^/$j=/g" "$z" > tigs_"$z";fi; done; done
+
+
+
+molecularecology@Chimborazo:/media/Summit/Chapter_3/stairway_plot_v2.1.1$ 
+(blueprint and stairway plot folders/files)
+ #$cp WI.blueprint stairway_plot_es/
+ #$java -cp stairway_plot_es/ Stairbuilder WI.blueprint
+ #$xdg-open LI.final.summary.pdf
